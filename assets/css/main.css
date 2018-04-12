@@ -13,9 +13,6 @@
 
 /* OVERALL ASPECT */
 
-.carrosel {
-    background-image:  url("purplebg.png");
-}
 
 /* *{
     overflow-x: hidden;
@@ -86,6 +83,10 @@ a{
     -o-background-size: auto;
     border-color: transparent;
     width: 100%;
+}
+
+.teste.scrolling {
+    background: linear-gradient(to right, rgb(44, 62, 80), rgb(52, 152, 219));
 }
 
 body {

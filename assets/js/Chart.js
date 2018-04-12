@@ -16,6 +16,8 @@ window.Chart = function(context){
 	//Easing functions adapted from Robert Penner's easing equations
 	//http://www.robertpenner.com/easing/
 	
+	AOS.init();
+
 	
 	var animationOptions = {
 		linear : function (t){
