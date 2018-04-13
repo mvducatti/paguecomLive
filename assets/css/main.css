@@ -18,6 +18,25 @@
     overflow-x: hidden;
 } */
 
+.navbar.shrink {
+    min-height: 15px;
+  }
+  
+  .navbar.shrink a {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-size: 15px;
+  }
+  
+  .navbar.shrink .navbar-brand {
+    font-size: 25px;
+  }
+  
+  .navbar.shrink .navbar-toggle {
+    padding: 4px 5px;
+    margin: 8px 15px 8px 0;
+  }
+
 img.bg {
     /* Set rules to fill background */
     max-height: 100%;

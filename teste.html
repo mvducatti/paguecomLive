@@ -30,7 +30,7 @@
   <body>
 
     <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top nav" id="teste">
+    <div class="navbar navbar-inverse navbar-fixed-top nav" id="teste" >
       <div class="container ">
         <div class="navbar-header " >
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -47,7 +47,10 @@
             <li><a style="color:white" href="#EXE_DIV1" name="processadora">HOME</a></li>
             <li><a style="color:white" href="#EXE_DIV2">PRODUTOS</a></li>
             <li><a style="color:white;" href="#EXE_DIV3">FILOSOFIA</a></li>
+            <li><a style="color:white;" href="#EXE_DIV5">TESTEMUNHOS</a></li>
+            <li><a style="color:white;" href="#EXE_DIV6">NOSSOS NÚMEROS</a></li>
             <li><a style="color:white;" href="#EXE_DIV4">CONTATO</a></li>
+            <li><a style="color:white;" href="#EXE_DIV7">SOBRE</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -162,28 +165,36 @@
     
 
     <div class="container" style="width: 100%; margin: 0px;;">
-        <div class="row">
-            <div class="container-full r" style="padding-bottom: 100px; padding-top: 100px" id="EXE_DIV3">
+        <div class="row" id="EXE_DIV3">
+            <div class="container-full r" style="padding-bottom: 100px; padding-top: 100px" >
                 <div class="row" >
                     <div class="col-sm-12" style="align-content: center;">
                             <img style="max-width: 100%;" class="img-responsive" src="./assets/img/filosofia-nova1.jpg" alt=""/>
                     </div>
+                    
+            <div id="EXE_DIV5"></div>
+            <p></p>
+            <p></p>
                 </div>
             </div>
         </div>
     </div>
 
-            <div class="row">
+    
+
+            <div class="row" >
                 <div class="container-full r">
                     <div class="row" >
                         <div class="col-sm-12" style="align-content: center;">
-                                <img style="max-width: 100%;" class="img-responsive" src="./assets/img/testemunhos1.jpg" alt=""/>
+                            <img style="max-width: 100%;" class="img-responsive" src="./assets/img/testemunhos1.jpg" alt=""/>
+                            <div id="EXE_DIV6"></div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" >
                 <div class="container-full r">
                     <div class="row" >
                         <div class="col-sm-12" style="align-content: center;">
@@ -196,23 +207,42 @@
 	<div id="EXE_DIV4"></div>
 <p></p>
 <p></p>
+<div class="row"></div>
 <div class="container-full g" style="margin-top:100px;padding-bottom: 100px;padding-right: 50px; padding-left: 50px; background: linear-gradient(to right, rgb(44, 62, 80), rgb(52, 152, 219));">
 	<form id="contact-form" method="post" action="contact.php" role="form">
     <div class="messages"></div>
+    
 
     <div class="controls" style="color:white;">
 
-        <div class="row" style="color:white;">
+            <div class="row" style="align-content: center;">
+            <div class="col-sm-2">
+                    <div class="container" style="margin-left: 200px">
+                        <h1></h1><i style="font-size: 100px;" class="fas fa-coffee"></i> </h1>
+                    </div>
+                </div>
+
+        <div class="col-sm-8 container">
+        <div  style="text-align: center;">
+            <h1>A Equipe da Live quer tomar um café com você.  </h1>
+                <p>Sem compromisso, simples assim. <br> Queremos ouvir o que você tem em mente, 
+                    o que precisa para o seu negócio decolar. <br> A gente faz acontecer!
+                </p>
+        </div>
+    </div>
+</div>
+        
+        <div class="row" style="color:white; margin-top: 50px;">
             <div class="col-md-6" style="color:white;">
                 <div class="form-group">
-                    <label for="form_name">Firstname *</label>
+                    <label for="form_name">Nome*</label>
                     <input id="form_name" type="text" name="name" class="form-control" placeholder="Nome *" required="required" data-error="Primeiro nome é necessário.">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="form_lastname">Lastname *</label>
+                    <label for="form_lastname">Sobrenome*</label>
                     <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Sobrenome *" required="required" data-error="Último nome é necessário.">
                     <div class="help-block with-errors"></div>
                 </div>
@@ -221,14 +251,14 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="form_email">Email *</label>
+                    <label for="form_email">Email*</label>
                     <input id="form_email" type="email" name="email" class="form-control" placeholder="Email *" required="required" data-error="Este e-mail não é válido">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="form_phone">Phone</label>
+                    <label for="form_phone">Telefone</label>
                     <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Telefone">
                     <div class="help-block with-errors"></div>
                 </div>
@@ -237,13 +267,13 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <label for="form_message">Message *</label>
+                    <label for="form_message">Mensagem*</label>
                     <textarea id="form_message" name="message" class="form-control" placeholder="Sua mensagem *" rows="4" required="required" data-error="Por favor, coloque uma mensagem"></textarea>
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
             <div class="col-md-12">
-                <input type="submit" class="btn btn-send btn-form" value="Send message">
+                <input type="submit" class="btn btn-send btn-form" value="Enviar Mensagem">
             </div>
         </div>
         <div class="row">
@@ -256,7 +286,7 @@
 
 </div>
 
-<footer class="footer" style="background: linear-gradient(to right, rgb(44, 62, 80), rgb(52, 152, 219));">
+<footer class="footer" style="background: #141414;" id="EXE_DIV7">
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
@@ -301,31 +331,15 @@
             }
         });</script>
 
-        <script>$(window).scroll(function() {    
-            var scroll = $(window).scrollTop();
-
-            if (scroll >= 50) {
-                $("#teste").addClass("scrolling");
+        <script>$(window).scroll(function() {
+            if ($(document).scrollTop() > 80) {
+              $('.navbar').addClass('shrink');
             } else {
-                $("#teste").removeClass("scrolling");
+              $('.navbar').removeClass('shrink');
             }
-        });</script>
-
-        <script>$(document).ready(function(){
-            var scrollTop = 0;
-            $(window).scroll(function(){
-              scrollTop = $(window).scrollTop();
-               $('.counter').html(scrollTop);
-              
-              if (scrollTop >= 100) {
-                $('#global-nav').addClass('scrolled-nav');
-              } else if (scrollTop < 100) {
-                $('#global-nav').removeClass('scrolled-nav');
-              } 
-              
-            }); 
-            
           });</script>
+
+
 
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
